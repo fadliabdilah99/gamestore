@@ -1,0 +1,116 @@
+h1,
+h2 {
+  font-size: 60px;
+  text-align: center;
+  font-family: arial;
+  margin: 10px;
+}
+body {
+  background-image: url("../img/bga.jpg");
+}
+
+button {
+  display: block;
+  margin: auto;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  cursor: url(../img/palu1.png), auto;
+}
+
+.container:active {
+  cursor: url(../img/palu2.png), auto;
+}
+
+.tanah {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.tanah::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 100px;
+  background: url(../img/tanah.png) bottom center no-repeat;
+  background-size: 80%;
+  position: absolute;
+  bottom: -25px;
+}
+
+.tikus {
+  width: 100%;
+  height: 100%;
+  background: url(../img/tikusucul.png) bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 150px;
+  transition: top 0.3s;
+}
+
+.tanah.muncul .tikus {
+  top: -15px;
+}
+.keterangan {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  color: rgb(204, 162, 107);
+}
+.waktu {
+  background-color: #d2d1d1;
+  border-radius: 20px;
+}
+.nilai {
+  border-radius: 20px;
+  background-color: #d2d1d1;
+}
+
+.mulai {
+  background-color: #ff0000;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 20px;
+  transition: 0.5s;
+  color: #eaeaea;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.mulai:hover {
+  background-color: rgb(255, 0, 0);
+  transition: 0.5s ease-in-out;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+span {
+  color: rgb(255, 0, 0);
+}
+.refres {
+  padding-top: 400px;
+}
+.cobalagi {
+  margin-top: 20px;
+  background-color: #ff0000;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 20px;
+  transition: 0.5s;
+  color: rgb(204, 162, 107);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.cobalagi:hover {
+  background-color: rgb(255, 0, 0);
+  transition: 0.5s ease-in-out;
+  color: rgb(204, 162, 107);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}

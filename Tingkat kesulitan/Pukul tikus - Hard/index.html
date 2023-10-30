@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pukul Tikus Tanah</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <h1>Pukul Tikus Tanah<span>Hard</span></h1>
+
+    <button type="button" class="mulai" onclick="mulai()">Mulai!</button>
+    <div class="keterangan" id="keterangan">
+      <div class="waktu">
+        <h1 id="countdown">Time</h1>
+      </div>
+      <div class="nilai">
+        <h2 class="papan-skor">Skor</h2>
+      </div>
+    </div>
+    <div class="container" id="game">
+      <div class="tanah">
+        <div class="tikus"></div>
+      </div>
+      <div class="tanah">
+        <div class="tikus"></div>
+      </div>
+      <div class="tanah">
+        <div class="tikus"></div>
+      </div>
+      <div class="tanah">
+        <div class="tikus"></div>
+      </div>
+      <div class="tanah">
+        <div class="tikus"></div>
+      </div>
+      <div class="tanah">
+        <div class="tikus"></div>
+      </div>
+      <div class="refres">
+        <button onclick="refreshPage()" class="cobalagi">Coba lagi</button>
+      </div>
+    </div>
+
+    <audio src="audio/Pop.mp3" id="pop"></audio>
+    <script src="js/script.js"></script>
+  </body>
+</html>
